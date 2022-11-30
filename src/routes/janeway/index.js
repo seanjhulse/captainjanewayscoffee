@@ -1,3 +1,4 @@
+import { Box, Container } from '@material-ui/core';
 import { h } from 'preact';
 import style from './style.css';
 
@@ -16,13 +17,15 @@ const janewaysAge = () => {
 }
 
 const Janeway = () => (
-	<div class={style.main}>
-		<img src="/assets/images/misc/janeway.jpg" class={style.photo} />
-		<h1>This is my dog, Janeway</h1>
-		<p>She is {janewaysAge()}.</p>
-		<p>She's named after <i>Captain Janeway</i> of <i>Star Trek Voyager</i>. Cpt. Janeway is known for her drink of choice: coffee, black.</p>
-		<p>My dog doesn't drink coffee but sometimes she behaves like she does.</p>
-	</div>
+	<Box className={style.main}>
+		<Container>
+			<img src="/assets/images/misc/janeway.jpg" class={style.photo} />
+			<h1>This is my dog, Janeway</h1>
+			<p>She is {janewaysAge()}.</p>
+			<p>She's named after <i>Captain Janeway</i> of <i>Star Trek Voyager</i>. Cpt. Janeway is known for her drink of choice: coffee, black.</p>
+			<p>My dog doesn't drink coffee but sometimes she behaves like she does.</p>
+		</Container>
+	</Box>
 );
 
 export default Janeway;

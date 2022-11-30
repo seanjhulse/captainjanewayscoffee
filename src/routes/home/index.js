@@ -1,10 +1,13 @@
-import { h } from 'preact';
+import { Box, Container } from '@material-ui/core';
+import CoffeeMakerRounded from '@mui/icons-material/CoffeeMakerRounded';
 import style from './style.css';
 
 const Home = () => (
-	<div class={style.home}>
-		<h1>Coffee, black.</h1>
-	</div>
+	<Box className={style.home}>
+		<Container>
+			<h1><CoffeeMakerRounded /> Coffee, black.</h1>
+		</Container>
+	</Box>
 );
 
 export default Home;
