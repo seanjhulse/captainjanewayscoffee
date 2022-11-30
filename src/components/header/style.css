@@ -33,13 +33,13 @@
 	text-align: center;
 	background: rgba(255,255,255,0);
 	text-decoration: none;
-	color: rgb(41, 41, 41);
+	color: rgb(128, 128, 128);
 	will-change: background-color;
 }
 
 .header nav a:hover,
 .header nav a:active {
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 .header nav a.active {
