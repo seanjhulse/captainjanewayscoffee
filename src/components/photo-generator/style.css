@@ -14,7 +14,8 @@
 @media only screen and (max-width: 600px) {
     .photoWrapper {
         position: fixed;
-        top: 0;
+        top: auto;
+        bottom: 0;
         right: 0;
         z-index: 0;
     }
@@ -22,7 +23,7 @@
     .photo {
         height: auto;
         width: 100%;
-        mask-image: linear-gradient(to bottom, black 50%, transparent);
-        -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
+        mask-image: linear-gradient(to top, black 50%, transparent);
+        -webkit-mask-image: linear-gradient(to top, black 50%, transparent);
     }
 }
