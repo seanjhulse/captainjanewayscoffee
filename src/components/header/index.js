@@ -1,3 +1,4 @@
+import { h } from 'preact';
 import { Container } from '@material-ui/core';
 import { Link } from 'preact-router/match';
 import style from './style.css';

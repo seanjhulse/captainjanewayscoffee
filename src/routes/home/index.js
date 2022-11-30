@@ -1,3 +1,4 @@
+import { h } from 'preact';
 import { Box, Container } from '@material-ui/core';
 import CoffeeMakerRounded from '@mui/icons-material/CoffeeMakerRounded';
 import style from './style.css';
