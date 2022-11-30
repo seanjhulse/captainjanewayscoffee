@@ -1,6 +1,8 @@
 import { h } from 'preact';
 import { Router } from 'preact-router';
-import { createTheme, ThemeProvider, CssBaseline, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 import Header from './header';
 
@@ -16,10 +18,10 @@ const theme = createTheme({
 });
 
 const App = () => (
-	<div id="app">
-		<ThemeProvider theme={theme}>
+	<ThemeProvider theme={theme}>
+		<CssBaseline />
+		<div id="app">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-			<CssBaseline />
 			<Header />
 			<PhotoGenerator />
 			<Box style={{paddingTop: "4rem"}}>
@@ -28,8 +30,8 @@ const App = () => (
 					<Janeway path="/janeway" />
 				</Router>
 			</Box>
-		</ThemeProvider>
-	</div>
+		</div>
+	</ThemeProvider>
 )
 
 export default App;
