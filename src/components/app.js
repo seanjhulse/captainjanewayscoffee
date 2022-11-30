@@ -5,6 +5,7 @@ import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
+import Janeway from '../routes/janeway';
 import PhotoGenerator from './photo-generator';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
 		<PhotoGenerator />
 		<Router>
 			<Home path="/" />
+			<Janeway path="/janeway" />
 		</Router>
 	</div>
 )

@@ -7,6 +7,7 @@ const Header = () => (
 		<h1>Captain Janeway's Coffee</h1>
 		<nav>
 			<Link activeClassName={style.active} href="/">Home</Link>
+			<Link activeClassName={style.active} href="/janeway">Janeway</Link>
 		</nav>
 	</header>
 );
